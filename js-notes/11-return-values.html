@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Returning Values in Functions</title>
+  </head>
+  <body>
+    <script>
+      let player1Time = 102;
+      let player2Time = 107;
+
+      function getFastestRaceTime() {
+        if (player1Time < player2Time) {
+          return player1Time;
+        } else if (player2Time < player1Time) {
+          return player2Time;
+        } else {
+          return player1Time;
+        }
+      }
+
+      let fastestRacer = getFastestRaceTime();
+      console.log(fastestRacer);
+
+      //Challenge
+      // Write a function that returns the total race time
+      // Call/invoke the function and store the returned value in a new variable
+      // Finally, log the variable out
+
+      function totalRaceTime() {
+        return player1Time + player2Time;
+      }
+
+      let totalTime = totalRaceTime();
+      console.log(totalTime);
+    </script>
+  </body>
+</html>

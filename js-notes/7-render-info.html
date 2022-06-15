@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Render Info</title>
+  </head>
+  <body>
+    <p id="welcome-el"></p>
+    <script>
+      let welcomeEl = document.getElementById("welcome-el");
+      let name = "Nick";
+      let greeting = "Welcome back";
+
+      welcomeEl.innerText = `${greeting} ${name}`;
+
+      //Challenge
+
+      // Add an emoji to the end! 👋
+      // WRITE YOUR CODE BELOW HERE
+      // HINT: count = count + 1
+
+      welcomeEl.innerText += "🖕🏻";
+    </script>
+  </body>
+</html>

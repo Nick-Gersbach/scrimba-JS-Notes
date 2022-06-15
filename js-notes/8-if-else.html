@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If Else Condition</title>
+  </head>
+  <body>
+    <h1>If Else Conditionals</h1>
+    <script>
+      let firstCard = 11;
+      let secondCard = 12;
+      let sum = firstCard + secondCard;
+
+      if (sum < 21) {
+        console.log("Do you want to draw a new card?");
+      } else if (sum === 21) {
+        console.log("You've got Black Jack!");
+      } else {
+        console.log("You are out of the game!");
+      }
+
+      //Challenges
+
+      //Check to see if the person can enter the nightclub (21 and older can enter)
+
+      let age = 18;
+      //if less than 21 --> "You can not enter the club"
+      //else "Welcome!"
+
+      if (age < 21) {
+        console.log("You can not enter the club");
+      } else {
+        console.log("Welcome!");
+      }
+
+      //Check if a person is eligible for a birthday card from the king of Norway
+      age = 100;
+
+      //If less than 100 --> "Not eligible"
+      //Else if exactly 100 --> "Here is your birthday card from the king"
+      //Else --> Not eligible, you have already gotten your birthday card
+
+      if (age < 100) {
+        console.log("Not eligible");
+      } else if (age === 100) {
+        console.log("Here is your birthday card from the king");
+      } else {
+        console.log("Not eligible, you have already gotten your birthday card");
+      }
+
+      //Challenge True or False (which will each one be)
+      //Note = All if else statements always evaulate to a boolean (true or false) in the background.
+      console.log(4 === 3); // false
+      console.log(5 > 2); // true
+      console.log(12 > 12); // false
+      console.log(3 < 0); // false
+      console.log(3 >= 3); // true
+      console.log(11 <= 11); // true
+      console.log(3 <= 2); // false
+    </script>
+  </body>
+</html>

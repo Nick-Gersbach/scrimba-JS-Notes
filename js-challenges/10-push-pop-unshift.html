@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Challenge: Objects and Functions</title>
+  </head>
+  <body>
+    <h1>JS Push Pop Unshift</h1>
+    <script>
+      let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
+
+      // You need to help me fixup the largeCountries array so that
+      // China and Pakistan are added back into their respective places
+
+      // Use push() & pop() and their counterparts unshift() & shift()
+      // Google how to use unshift() and shift()
+
+      //push = Adds element to the end
+      //pop = Removes last element on end of array
+      //shift = removes first element
+      //unshift = adds element to the beginning of the array
+
+      largeCountries.shift();
+      largeCountries.unshift("China");
+      largeCountries.pop();
+      largeCountries.push("Pakistan");
+
+      console.log(largeCountries);
+    </script>
+  </body>
+</html>

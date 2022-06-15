@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Functions</title>
+  </head>
+  <body>
+    <h1>Javascript Functions</h1>
+    <!-- 
+      functions allow you to run pieces of code over and over again
+     -->
+    <script>
+      // Setting up the the race 🏎 🏎 🏎
+      function countDown() {
+        console.log(5);
+        console.log(4);
+        console.log(3);
+        console.log(2);
+        console.log(1);
+      }
+
+      countDown();
+
+      // GO! 🏁
+      // Players are running the race 🏎 💨
+      // Race is finished! 🍾
+
+      // Get ready for a new race 🏎 🏎 🏎
+      countDown();
+
+      //Challenge
+      // Create a function (you decide the name) that logs out the number 42 to the console
+      // Call/invoke the function
+
+      function logNumber() {
+        console.log(42);
+      }
+
+      logNumber();
+
+      //Challenge
+      let lap1 = 34;
+      let lap2 = 33;
+      let lap3 = 36;
+
+      // Create a function that logs out the sum of all the lap times
+      function lapSum() {
+        let totalTime = lap1 + lap2 + lap3;
+        console.log(totalTime);
+      }
+
+      lapSum();
+
+      //Challenge
+      let lapsCompleted = 0;
+
+      // Create a function that increments the lapsCompleted variable with one
+      // Run it three times
+
+      function lapCounter() {
+        lapsCompleted = lapsCompleted + 1;
+      }
+      lapCounter();
+      console.log(lapsCompleted);
+      lapCounter();
+      console.log(lapsCompleted);
+      lapCounter();
+
+      console.log(lapsCompleted);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Challenge: Render Images</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: whitesmoke;
+        text-align: center;
+        color: #130e0f;
+      }
+
+      h1 {
+        font-weight: 200;
+        letter-spacing: 2px;
+      }
+
+      #container {
+        width: 100%;
+      }
+
+      .team-img {
+        width: 100px;
+        border-radius: 100%;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Brooklyn Agency</h1>
+    <div id="container">
+      <!-- <img class="team-img" src="images/hip1.jpg">
+            <img class="team-img" src="images/hip2.jpg">
+            <img class="team-img" src="images/hip3.jpg"> -->
+    </div>
+    <script>
+      // Create a function that renders the three team images
+      // Use a for loop, template strings (``), plus equals (+=)
+      // .innerHTML to solve the challenge.
+
+      //Loop throug the images variable
+      //use container.innerHTML += ``
+
+      const imgs = ["./img/hip1.jpg", "./img/hip2.jpg", "./img/hip3.jpg"];
+      const container = document.getElementById("container");
+
+      /*
+
+      function renderImages() {
+        for (let i = 0; i < imgs.length; i++) {
+          container.innerHTML += `<img class='team-img' src='${imgs[i]}'>`;
+        }
+      }
+
+      */
+
+      //Refactored Version because innerhtml slows websites down and using it 3 times in the loop is bad practice
+      function renderImages() {
+        let imgsDOM = "";
+        for (let i = 0; i < imgs.length; i++) {
+          imgsDOM += `<img class='team-img' src='${imgs[i]}' alt='company employee'>`;
+        }
+
+        container.innerHTML = imgsDOM;
+      }
+
+      renderImages();
+    </script>
+  </body>
+</html>

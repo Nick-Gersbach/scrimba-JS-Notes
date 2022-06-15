@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generating Random Numbers</title>
+  </head>
+  <body>
+    <h1>Using Math.random</h1>
+    <script>
+      let randomNumber = Math.random();
+
+      console.log(randomNumber);
+
+      /*
+
+                    What does Math.random() do?
+
+                    Your answer: Generates a random number between 0 and 1
+
+
+                    */
+
+      //You can increase the range of your random number generation by multiplying Math.random by whatever number you want to stop at. The example below wll generate a number between 0 and 5.9
+
+      randomNumber = Math.random() * 6;
+
+      console.log(randomNumber);
+
+      /*
+              In which range will our randomNumber be now?
+
+              From: 0
+              To: 5.9
+            */
+
+      // let randomNumber = Math.random() * 6
+
+      let flooredNumber = Math.floor(3.55632);
+
+      console.log(flooredNumber);
+
+      /*
+
+      What does Math.floor() do to positive numbers?
+
+      Your answer: Turns a decimal number into a whole number
+
+      */
+
+      //Challenge
+      randomNumber = Math.floor(Math.random() * 6);
+
+      console.log(randomNumber);
+
+      /*
+
+      Write down all the possible values randomNumber can hold now!
+
+       0 1 2 3 4 5
+
+
+      */
+
+      //Challenge
+      // Try to modify the expression so that we get a range from 1 to 6
+      let dice = Math.floor(Math.random() * 6) + 1;
+
+      console.log(dice);
+
+      // Create a function, rollDice(), that returns a random number between 1 and 6
+
+      function rollDice() {
+        return Math.floor(Math.random() * 6) + 1;
+      }
+      console.log(`Die 1: ${rollDice()}`);
+      console.log(`Die 2: ${rollDice()}`);
+    </script>
+  </body>
+</html>

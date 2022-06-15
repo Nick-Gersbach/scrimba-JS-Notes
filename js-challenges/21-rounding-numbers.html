@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Challenge: Rounding Numbers</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      button {
+        border: none;
+        border-radius: 200px;
+        padding: 15px 30px;
+        font-weight: bold;
+        cursor: pointer;
+        background: #fc807f;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JS Challenge: Rounding Numbers</h1>
+    <button id="purchase-btn"></button>
+    <script>
+      // Challenge:
+      // Round the price in the button down to two decimal places.
+      // Don't know which method to use? Google it!
+
+      const totalPrice = (420.69235632455).toFixed(2);
+      const btn = document.getElementById("purchase-btn");
+      btn.textContent = `Buy €${totalPrice}`;
+    </script>
+  </body>
+</html>

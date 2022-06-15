@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical Operators</title>
+  </head>
+  <body>
+    <h1>Logical Operators (&& || !)</h1>
+    <script>
+      /*
+
+
+      The and && operator (Both expressions must evaluate to true)
+
+      */
+      let hasSolvedChallenge = false;
+      let hasHintsLeft = false;
+
+      // Create an if statement that checks that both variables are false.
+      // If so, run the showSolution() function
+
+      if (hasSolvedChallenge === false && hasHintsLeft === false) {
+        showSolution();
+      }
+
+      function showSolution() {
+        console.log("Showing the solution....");
+      }
+
+      /*
+
+
+
+      The or || operator (One expression must evaluate to true)
+
+
+
+      */
+
+      // Create two boolean variables, likesDocumentaries and likesStartups
+      // Use an OR statement (||) to call recommendMovie() if either of those variables are true
+
+      const likesDocumentaries = true;
+      const likesStartups = false;
+
+      if (likesDocumentaries === true || likesStartups === true) {
+        recommendMovie();
+      }
+      function recommendMovie() {
+        console.log("Hey, check out this new film we think you will like!");
+      }
+    </script>
+  </body>
+</html>

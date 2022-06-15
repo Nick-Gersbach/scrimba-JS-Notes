@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Append JS</title>
+  </head>
+  <body>
+    <h1>Append with Javascript</h1>
+    <!-- 
+      - Append means to add something to the end of a document
+
+      - Insteasd of always using innerHTML it is best to create elements using document.createElement() and then append them to the DOM. This is because innerHTML is slow and using it a lot will slow your website down
+     -->
+    <script>
+      // Let's try a different method!
+      for (let i = 0; i < myLeads.length; i++) {
+        // ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
+
+        /////////////////////////////////////////////////////////////
+
+        // 1. create element and store it in a variable
+        const li = document.createElement("li");
+
+        // 2. set text content
+        li.textContent = myLeads[i];
+
+        // 3. append to ul
+        ulEl.append(li);
+      }
+    </script>
+  </body>
+</html>

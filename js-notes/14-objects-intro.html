@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to Objects</title>
+  </head>
+  <body>
+    <h1>Intro to Objects</h1>
+    <script>
+      // Objects - store data in-depth - composite / complex data type
+      // key-value pairs
+
+      let course = {
+        title: "Learn CSS Grid for free",
+        lessons: 16,
+        creator: "Per Harald Borgen",
+        length: 63,
+        level: 2,
+        isFree: true,
+        tags: ["html", "css"],
+      };
+
+      console.log(course.tags);
+
+      //Challenge
+      // Create an object that represents an airbnb castle listing.
+      // It should contain at least one boolean, one string, one number, and one array
+      // Log out at least two of the keys using the dot notation
+
+      let castle = {
+        available: true,
+        bedrooms: "8 bedrooms",
+        bathrooms: 4,
+        extras: ["pool", "indoor jacuzzi", "fireplace"],
+      };
+
+      console.log(castle.available);
+      console.log(castle.bedrooms);
+    </script>
+  </body>
+</html>
