@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS For Of Loops</title>
+  </head>
+  <body>
+    <h1>JS For Of Loops</h1>
+    <!-- 
+
+      For of loops do the same thing as for loops but with less code
+      
+     -->
+    <script>
+      const names = ["Karl", "John", "Steve"];
+      const people = [
+        { name: "Karl", location: "UK" },
+        { name: "Steve", location: "US" },
+      ];
+
+      // looping over names using both for & for of
+
+      //for loop
+      for (let i = 0; i < names.length; i++) {
+        console.log(names[i]);
+      }
+
+      //for of loop
+      for (const name of names) {
+        console.log(name);
+      }
+
+      // looping through an array of objects using both for and for of
+
+      //for loop
+      for (let i = 0; i < people.length; i++) {
+        console.log(people[i].name);
+        console.log(people[i].location);
+      }
+
+      //for of loop
+      for (const person of people) {
+        console.log(person.name);
+        console.log(person.location);
+      }
+    </script>
+  </body>
+</html>
