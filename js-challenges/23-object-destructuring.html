@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Destructuring Challenge</title>
+  </head>
+  <body>
+    <h1>Object Destructuring Challenge</h1>
+    <script>
+      const dreamVacation = {
+        destination: "Turks amd Caicos",
+        activity: "play at the beach",
+        accomodation: "luxury beach front bungalow",
+        companion: "my family",
+      };
+
+      const { destination, activity, accomodation, companion } = dreamVacation;
+
+      console.log(
+        `I would love to spend a month in ${dreamVacation.destination} with my ${dreamVacation.companion}. We would stay in a ${dreamVacation.accomodation} and ${activity}.`
+      );
+    </script>
+  </body>
+</html>
