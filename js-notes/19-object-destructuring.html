@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Destructuring</title>
+  </head>
+  <body>
+    <h1>JS Object Destructuring</h1>
+    <!-- 
+      Object destructuring refers to a feature that enables you to easily extract properties from objects and bind them to variables
+     -->
+    <script>
+      const favoriteMovie = {
+        title: "Goodfellas",
+        year: "1990",
+        genere: "Mafia",
+        star: "Robert Deniro",
+        director: "Martin Scorcesse",
+      };
+
+      //This is the new better way with much less code
+
+      const { title, year, genre, star, director } = favoriteMovie;
+
+      //If you wanted to make a sentace about your favorite movie you used to have to do it like this ...
+
+      // const title = favoriteMovie.title;
+      // const year = favoriteMovie.year;
+      // const genre = favoriteMovie.genre;
+      // const star = favoriteMovie.star;
+      // const director = favoriteMovie.director;
+
+      console.log(
+        `My favorite movie is ${favoriteMovie.title} starring ${favoriteMovie.star}. It's a ${favoriteMovie.genere} movie that was directed by ${favoriteMovie.director} and released in the year ${favoriteMovie.year}.`
+      );
+    </script>
+  </body>
+</html>
