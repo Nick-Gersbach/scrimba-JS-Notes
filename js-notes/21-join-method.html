@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Join Method</title>
+  </head>
+  <body>
+    <!-- 
+
+      Q: What does the .join() method do?
+
+      A: The .join() method lets you ...
+
+        1. Concatenate the elements of the array into a string
+
+        2. Lets you choose how the elements are seperated
+
+        3. Returns the new string it has created
+
+
+
+     -->
+    <script>
+      const cssClassesArray = [
+        "btn",
+        "btn-primary",
+        "btn-active",
+        "btn-sidebar",
+      ];
+
+      const cssClassesString = cssClassesArray.join(""); //Pass in whatever seperator you want to use between your strings. The default seperator is a comma. We used a space in this example by putting a space between the commas.
+
+      console.log(cssClassesString);
+    </script>
+  </body>
+</html>

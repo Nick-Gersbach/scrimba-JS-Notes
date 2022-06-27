@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-image: url("images/bday.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 27px;
+        color: deeppink;
+        font-family: "Boogaloo", cursive;
+      }
+
+      .wrapper {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: transparent;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        padding: 2em 2em;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        text-align: center;
+        border-radius: 5px;
+      }
+
+      .box {
+        border: 3px solid midnightblue;
+        width: 40px;
+        padding: 5px;
+        text-align: center;
+        margin: 5px;
+        border-radius: 5px;
+        background-color: deeppink;
+        color: white;
+      }
+    </style>
+    <title>Map Method Challenge</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Birthday Guests 🎈</h1>
+        <div id="list"></div>
+      </div>
+    </div>
+    <script>
+      const guestList = ["Tom", "Mary", "Clare", "John", "Liz"];
+
+      /*
+Challenge
+1. Refactor the code below to use .map() instead of 
+   the for loop.
+2. Don't worry about the commas for now.
+*/
+
+      // const guestsHtml = [];
+
+      // for (let i = 0; i < guestList.length; i++) {
+      //   guestsHtml.push(`<div class="box">${guestList[i]}</div>`);
+      // }
+
+      const guestsHtml = guestList.map(function (guest) {
+        return `<div class="box">${guest}</div>`;
+      });
+
+      document.getElementById("list").innerHTML = guestsHtml.join(" ");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Challenge</title>
+  </head>
+  <body>
+    <div class="dog-image"></div>
+    <p id="activity"></p>
+    <script>
+      const dogImage = (document.querySelector(
+        ".dog-image"
+      ).innerHTML = `<img src="https://images.dog.ceo/breeds/schipperke/n02104365_6551.jpg"/>`);
+
+
+
+      //Get Random Dog Image
+      fetch("https://dog.ceo/api/breeds/image/random")
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+
+      //Fetch Random Activity from bored bot api
+      fetch("https://apis.scrimba.com/bored/api/activity")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data)
+           document.getElementById("activity").textContent = data.activity;
+        });
+    </script>
+    </script>
+  </body>
+</html>

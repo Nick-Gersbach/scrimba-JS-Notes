@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+  </head>
+  <body>
+    <h1>JSON</h1>
+
+    <!-- 
+      JSON is another programming language used to pass and store data.
+
+      JSON = Javascript Object Notation
+
+      JSON files have the .json extension
+      
+      JSON objects look like regular javascript variables. Make sure your keys in the object jey value pairs are written in double quotes
+
+      JSON Example
+
+      {
+        "name": "Nick",
+        "age": 30,
+        "gender": "male",
+        "hobbies": ["lifting", "eating", "sleeping"]
+        "sexy": true,
+      }
+
+      Almost every json file you see is going to be made up of a single object or an array of objects
+
+      JSON has to be formatted exactly right for it to work. You can use tools like jsonlint.com to make sure you wrote your JSON correctly
+
+      - You can view all of the json that comes into any website in real time by using the developer tools, clicking on network, and XHR
+
+      - Asynchronus means that code runs out of order and top top to bottom. This happens when you use the .then.
+     -->
+    <script>
+      //Making my frst fetch request to get data from a website using json
+      fetch("https://dog.ceo/api/breeds/image/random")
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+    </script>
+  </body>
+</html>
