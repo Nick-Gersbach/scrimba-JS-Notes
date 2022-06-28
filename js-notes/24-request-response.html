@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Responce Cycle</title>
+  </head>
+  <body>
+    <!-- 
+
+  Request - When a client (Your computer or internet connected device) asks for a resource from a server
+
+  Response - When a server responds (whether it worked or not) to the client
+
+  HTTP - Hyper Text Transfer Protocol, a protocol or set of agreed upon rules for how data is sent across the internet
+
+  The Components of a Request
+
+  1. Path (URL)
+  2. Method (GET, POST, DELETE, PUT)
+  3. Body (included in some but not all requests)
+  4. Headers (The meta data for the request)
+
+  URLs
+  - A URL is the address where your desired resource lives online
+
+  - There are 2 types of URLs
+  1. BaseURLs - will not change no matter what resource/information you are getting from an api
+
+   https://apis.scrimba.com/jsonplaceholder
+
+  2.Endpoint URLs - the part after the / where the data comes from
+
+  https://apis.scrimba.com/jsonplaceholder/posts ///posts is the end point
+
+  Request Methods
+
+  - The most common request methods are GET, POST, DELETE, PUT Each request method tells the server what kind of request your making and what your intention is for making the request is.
+
+  GET - Getting Data from the server or database
+
+  POST - Sending Data to a server or database (Think of blog post/facebook post, sending data to the server database) 
+
+  PUT - Update existing data or add new data
+
+  DELETE - Remove data from a server/database
+
+  Others - Patch/Options (Not important right now)
+
+  the fetch meathod uses a GET request by default but you can specify different methods of getting data by providing a second parameter
+
+  fetch("https://apis.scrimba.com/jsonplaceholder/posts", {method: "POST"})
+  now we are using POST
+
+
+   -->
+    <script>
+      fetch("https://apis.scrimba.com/jsonplaceholder/posts")
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+
+      fetch("https://apis.scrimba.com/jsonplaceholder/todos", { method: "GET" })
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+    </script>
+  </body>
+</html>
